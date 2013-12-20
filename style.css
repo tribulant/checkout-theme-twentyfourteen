@@ -1,0 +1,1493 @@
+/*
+WordPress Shopping Cart Plugin CSS
+Front-End Styles
+
+All rights reserved Tribulant Software (CC) 2011
+Original: wp-checkout/views/default/style.css
+*/
+
+/* ----------------------------------------------- */
+/* #0 - SUMMARY */
+/* #1 - Products List */
+/* #2 - Products Grid */
+/* #3 - Paging */
+/* #4 - Shopping Cart */
+/* #5 - Checkout */
+/* #6 - Product Page */
+/* #7 - Favorites */
+/* #8 - Categories */
+/* #9 - General Styles */
+/* ----------------------------------------------- */
+
+/* #1 - Products List */
+
+div.productslist {
+    margin: 15px 0;
+}
+
+div.productslist .productsoptions {
+	float:left;
+	width:100%;
+	padding:0 0 30px 0;
+	margin:0 0 30px 0;
+	border-bottom:1px solid #ddd;
+	position:relative;
+}
+
+div.productslist .productssort {
+	width:auto;
+    font-size:100%;
+	position:absolute;
+	right:0;
+	bottom:30px;
+}
+
+div.productslist .productssort select {
+	float:left;
+	width:auto;
+	border:1px solid #d3d3d3;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	padding:3px;	
+	height: 24px;
+}
+
+div.productslist .productssort label {
+	float:left;
+	width:auto;
+	padding-right:8px;
+	font-size:85%;
+	line-height:24px;
+}
+
+.changeviewmode {
+    width: 24px;
+    height: 24px;
+    display: block;
+    float: right;
+    margin: 0 0px 0 10px;
+    text-indent: -9999px;
+	cursor: pointer;
+	text-decoration:none;
+	border: none;
+}
+
+.changeviewmode:hover {
+	background-position:0 -24px;
+}
+
+.changetogrid {
+    background: url('img/gridviewicon.png') no-repeat;
+}
+
+.changetolist {
+    background: url('img/listviewicon.png') no-repeat;
+}
+
+.productslist .changetolist {
+	background-position:0 -48px;
+}
+
+.productsgrid .changetogrid {
+	background-position:0 -48px;
+}
+
+div.productslist ul {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    list-style: none;
+}
+
+div.productslist ul li {
+	float:left;
+    margin: 0 0 24px 0;
+    padding: 0 0 20px 0;
+    border-bottom: 1px #d4d4d4 solid;
+	list-style: none;
+	width:100%;
+}
+
+div.productslist .producttitle {
+    font-size: 125%;
+    text-align: left;
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1;	
+	display: inline;
+	text-transform: none;
+	line-height: 100%;
+}
+
+div.productslist .productimage {
+    float: left;
+	width: auto;
+    margin: 0 15px 0 0;
+}
+
+div.productslist .productimage img.productimagethumb {
+    border: none;
+	padding:5px;
+    border: 1px #d4d4d4 solid;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+div.productslist .productimage a.productimagelink {
+	display:block;
+}
+
+div.productslist .productdescription {
+
+}
+
+.entry p.productdescription {
+	margin-bottom:0.6em;
+}
+
+div.productslist .productimage a.productimagelink:hover {
+    border-color: #999999;
+}
+
+div.productslist .productdetails {
+    float: right;
+	width:200px;
+    text-align: center;
+    margin: 0 0 0 15px;
+    padding: 10px;
+    background: #f8f8f8;
+    border: 1px #CCCCCC solid;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: #333333;
+	position: relative;
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: top;	
+	zoom: 1;
+	*display: inline;
+}
+
+div.productslist .productdetails form {
+    margin: 10px 0 0 0;
+    padding: 0 0 0 0;
+    text-align: center;
+}
+
+div.productslist .productsubmit {
+    margin: 0 0 0 0;
+}
+
+div.productslist .productsubmit input {
+    width: auto;
+}
+
+div.productslist span.wpcoloading {
+}
+
+div.productslist span.wpcoadded {
+}
+
+div.productslist .productprice {
+    font-size: 105%;
+    font-weight: bold;
+}
+
+div.productslist .productkeywords {
+    margin: 0 0 0 0;
+    display: block;
+}
+
+/* #1 - End of Products List */
+
+/* #2 - Products Grid */
+
+div.productsgrid {
+    margin: 15px 0;
+}
+
+
+div.productsgrid .productsoptions {
+	float:left;
+	width:100%;
+	padding:0 0 30px 0;
+	margin:0 0 30px 0;
+	border-bottom:1px solid #ddd;
+	position:relative;
+}
+
+div.productsgrid .productssort {
+	width:auto;
+    font-size:100%;
+	position:absolute;
+	right:0;
+	bottom:30px;
+}
+
+div.productsgrid .productssort select {
+	float:left;
+	width:auto;
+	border:1px solid #d3d3d3;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	padding:3px;
+	height: 24px;
+}
+
+div.productsgrid .productssort label {
+	float:left;
+	width:auto;
+	padding-right:8px;
+	font-size:85%;
+	line-height:24px;
+}
+
+div.productsgrid ul {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    list-style: none;
+}
+
+div.productsgrid ul li {
+    display: -moz-inline-box; /* mozilla only */
+    display: inline-block;
+    vertical-align: top;
+    width: 29%;
+    margin: 0 1% 1.5% 1%;
+    padding: 5px 5px;
+    text-align: center;
+	border:1px solid #DDD;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+
+div.productsgrid ul li:before, div.productsgrid ul li:after {
+    content: "" !important;
+}
+
+div.productsgrid .producttitle {
+    text-align: center;
+    font-size: 110%;
+    font-weight: normal;
+    text-align: center;
+	margin:0 0 5px 0;
+	text-transform: none;
+	line-height: 100%;
+}
+
+div.productsgrid .producttitle a, div.productsgrid .producttitle a:link {
+    text-decoration: none;
+    display: block;
+}
+
+div.productsgrid .productimage {
+    display: block;
+}
+
+div.productsgrid .productimage img.productimagethumb {
+    border: none;
+    background: #FFFFFF;
+	padding:5px;
+	border:1px solid #eee;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+
+div.productsgrid .productimage a.productimagelink {
+    text-decoration: none;
+    display: block;
+}
+
+div.productsgrid .productimage a.productimagelink:hover {
+    border-color: #999999;
+}
+
+div.productsgrid .productdetails {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+	color: #333333;
+	text-align:center;
+	position: relative;
+}
+
+div.productsgrid .productdetails form {
+    margin: 10px 0 0 0;
+    padding: 0 0 0 0;
+    text-align: center;
+}
+
+div.productsgrid .productdetails form input {
+    margin: 0 0 4px 0;
+}
+
+div.productsgrid .productdetails form input.donateprice {
+	margin: 0 0 8px 0;
+}
+
+div.productsgrid .productdetails form .wpcobuttonwrap input {
+
+}
+
+div.productsgrid .productdetails form .wpcobuttonwrap input:hover {
+	
+}
+
+div.productsgrid .productsubmit {
+    display: block !important;
+    margin: 0 0 0 0;
+}
+
+div.productsgrid .productsubmit input {
+    width: auto;
+}
+
+div.productsgrid span.wpcoloading {
+}
+
+div.productsgrid span.wpcoadded {
+}
+
+div.productsgrid .productprice {
+    font-size: 105%;
+    font-weight: bold;
+}
+
+/* #2 - End of Products Grid */
+
+/* #3 - Paging */
+
+div.wpcopaging {
+	float:left;
+	width:auto;
+}
+
+div.wpcopaging span.displaying-num {
+	display: block;
+	width: 100%;
+	font-style: italic;
+	margin: 15px 0;
+}
+
+div.wpcopaging .page-numbers {
+	display:block;
+	float:left;
+	border: 1px #d4d4d4 solid;
+    border-radius: 5px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	padding: 5px 8px;
+	margin: 0 3px 0 0;
+	text-decoration: none;
+	text-align:center;
+	line-height:20px;
+	background:url('img/bg-buttons.png');
+}
+
+div.wpcopaging .current {
+	font-weight: bold;
+}
+
+div.wpcopaging .current, div.wpcopaging a.page-numbers:hover {
+    color: #666;
+	text-decoration: none;
+	background:url('img/bg-buttonshover.png') center center repeat-x;
+}
+
+div.wpcopaging .wpcoshowall {
+	float: left;
+	margin: 0 0 0 10px;
+	height: 32px;
+	line-height: 32px;
+	display: block;
+	vertical-align: middle;
+}
+
+div.wpcopaging .wpcoshowall a {
+	font-size: 85%;
+}
+
+/* #3 - End of Paging */
+
+/* #4 - Shopping Cart */
+
+table.wpco {
+	float:left;
+	width:100%;
+	border-collapse: collapse !important;
+	padding-bottom:20px;
+}
+
+a.savepdfinvoicelink img {
+	float: left;	
+}
+
+.wpco a.colorbox img.wpco,
+.wpcowidgetthumblink img.wpco {
+	display:block;
+    border: 1px #d3d3d3 solid;
+    padding: 2px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background: white;
+}
+
+.wpco .dropshadow {
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.wpco .radius4 {
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+.wpco a.colorbox:hover img.wpco,
+.wpcowidgetthumblink img.wpco {
+    border: 1px #999 solid;
+}
+
+.wpco tr th.check-column, .wpco tbody tr td {
+	vertical-align:middle;
+}
+
+.wpco tr td {
+	border:1px solid #CCC;
+}
+
+.wpcoinput {
+	margin-bottom:0;
+}
+
+#wpco_cartform {
+	float:left;
+	width:100%;
+	position:relative;
+}
+
+.wpco_columnimage {
+	text-align:center;
+	min-width:56px;
+}
+
+.productqty {
+	width:58px;
+}
+
+.removeproduct {
+	display:block;
+	width:16px;
+	height:27px;
+	line-height:27px;
+	background:url('img/delete.png') no-repeat left center;
+	margin:0 auto;
+	text-indent:-9999px;
+}
+
+.wpco tr td.wpco_columnimage {
+	border-right:0 !important;
+}
+
+.wpco tr td table {
+	border-bottom:0 none;
+	padding:0;
+	margin:0;
+}
+
+table.wpco tbody tr td, table.wpcocart tr th {
+	padding:5px !important;
+}
+
+table.wpco tr th {
+	text-align:center;
+	border:1px solid #CCC;
+	font-weight:bold;
+}
+
+.wpco_columntotal, 
+.total td, 
+.wpco_columnprice,
+.wpco_columnqty {
+	text-align:center;
+}
+
+.wpcocart .wpco_totaltext {
+	text-align:left;
+}
+
+.wpco_tablevariations {
+	border-collapse:collapse;
+}
+
+.wpco_tablevariations th {
+	vertical-align:middle;
+}
+
+.wpco_tablevariations td {
+	border:1px solid #CCC;
+}
+
+/* #4 - End of Shopping Cart */
+
+/* #5 - Checkout */
+
+div.wpcosteps {
+	margin: 0 0 20px 0;
+	padding: 20px 0;
+	display: block;
+	clear: both;
+	border-bottom: 1px #d3d3d3 solid;
+}
+
+div.wpcosteps ul {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	list-style: none;
+}
+
+div.wpcosteps ul li {
+	float: left;
+	padding: 0 0 0 0;
+	margin: 0 8px 0 8px;
+	color: rgb(34, 68, 102);
+	list-style: none;
+}
+
+div.wpcosteps ul li.active {
+	font-weight: bold;
+	color: rgb(213, 78, 33);
+	list-style: none;	
+}
+
+div.wpcosteps ul li span.number {
+	font-size: 22px;
+}
+
+.wpcoordersummarybox {
+	margin: 15px 0 20px 0;
+	width: 100%;
+}
+
+p.shippingmessage, .shippingmessageholder p {
+	padding: 10px 15px;
+	margin: 0 0 0 0 !important;
+}
+
+.shippingmessageholder {
+	width: 100%;
+	border: 1px solid #d3d3d3;
+}
+
+.wpco_shipping th, .wpco_billing th {
+	vertical-align:middle;
+}
+
+fieldset.ordersummary {
+	padding: 0 0 0 0;	
+}
+
+.wpco_orders tr td, .wpco_orderviewcart tr td {
+	text-align:center;
+}
+
+.wpco_orderview th {
+	vertical-align:middle;
+}
+
+.wpco_list,
+.wpcowidgetproducts {
+	float:left;
+	width:100%;
+	margin: 15px 20px 10px 20px !important;
+}
+
+.widget-cart .wpco_list,
+.widget-cart .wpco_list li {
+	margin-left: 0px !important;
+}
+
+.widget-cart .wpco_list {
+	list-style: none !important;
+}
+
+.wpco_list li {
+	float:left;
+	width:100%;
+}
+
+fieldset.steps {
+	float:left;
+	border: 1px #CCCCCC solid;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;	
+	margin: 0 0 15px 0;
+	padding: 0 0 0 0;
+}
+
+fieldset.steps .stepsholder {
+	/*padding: 20px;*/
+	margin: 0 0 20px 0;
+}
+
+.stepsholder label {
+	display: block;
+}
+
+fieldset.steps legend {
+	padding: 0 6px;	
+	margin: 0 0 0 0;
+	font-size: 120%;
+}
+
+div.wpco-form {
+
+}
+
+div.wpco-form .form-row {
+	width: 100%;
+	text-align: left;
+	margin: 0 0 15px 0;
+	display: block;
+}
+
+div.wpco-form .form-row label {
+	width: 200px;
+	margin: 0 15px 0 0;
+	font-weight: bold;
+	display: block;
+	float: left;
+	line-height: 30px;
+}
+
+/* #5 - End of Checkout */
+
+/* #6 - Product Page */
+
+div.wpcoproduct p.wpcooptionslink {
+	font-size: 11px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+div.wpcoproduct .stockcount {
+	white-space: nowrap;
+    font-size: 11px;
+    float: none;
+    margin: 0 0 0 0;
+    padding: 6px 8px;
+    border: 1px #CC0000 solid;
+    background: #FFEBE8;
+    font-weight: bold;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+div.wpcoproduct {
+
+}
+
+div.wpcoproduct .price {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+div.wpcoproduct .sprice {
+    color: #999999;
+    font-size: 100%;
+}
+
+div.wpcoproduct .recurringinfo {
+	background: #efefef;
+	border-radius: 4px;
+	padding: 4px 8px;
+	font-size: 80%;
+	display: inline-block;
+	margin: 10px 0 0 0;
+}
+
+div.wpcoproduct .recurringinfo .recurringinfo_recurrence,
+div.wpcoproduct .recurringinfo .recurringinfo_duration {
+	font-weight: bold;
+}
+
+input.donateprice, 
+input.widefat, 
+select.widefat,
+textarea.widefat {
+	border:1px solid #d3d3d3;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+
+input.donateprice {
+	width: 45px !important;
+}
+
+form input.widefat {
+	margin:0 3px 8px 0;
+}
+
+form input[type=checkbox] {
+	border:0 none !important;
+}
+
+form fieldset.wpcovariation label {
+	/*float:left;
+	width:100%;*/
+}
+
+div.wpcoproduct a img {
+	border: none;
+}
+
+div.wpcoproduct div.wpcohowmany {
+	margin: 0 0 10px 0;
+	width:100%;
+	float:left;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	border-bottom:1px solid #d3d3d3;
+}
+
+div.wpcoproduct div.wpcohowmany input {
+	margin-bottom:0;
+}
+
+div.wpcoproduct div.wpcohowmany input, 
+input.wpcoquantity,
+.wpco .wpcohowmany input,
+.wpcocouponcodeinput,
+.wpcobartercardno {
+    border: 1px #d3d3d3 solid;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    text-align: center;
+}
+
+div.wpcoproductimage {
+	margin: 0 0 15px 0;	
+}
+
+div.wpcoproduct div.wpcohowmany input, input.wpcoquantity {
+	width: 25px !important;	
+}
+
+input.wpcobartercardno {
+	width: 150px !important;	
+}
+
+div.wpcoproduct div.wpcoimages {
+	float:left;
+	width:auto;
+	padding-right:20px;
+}
+
+div.wpcoproduct div.wpcoimages span.clicktoenlarge {
+	font-size: 13px;
+	margin: 5px 0 10px 0;	
+}
+
+div.wpcoproduct div.wpcoimages div.viewllextraimageslink {
+	font-size: 11px;
+	margin: 5px 0 10px 0;	
+}
+
+
+
+/* #6 - End of Product Page */
+
+/* #7 - Favorites */
+
+.favoritesubmit {
+	display: block;
+	margin: 5px 0;	
+}
+
+a.favoritesubmitlink, .favoritesubmit {
+    line-height: 18px;
+    text-decoration: none;
+}
+
+a.favoritesubmitlink, span.favoritefail, span.favoriteadded {
+	padding-left:15px;
+}
+
+a.favoritesubmitlink {
+	background:url('img/star.png') no-repeat left center;
+}
+
+span.favoritefail {
+	background:url('img/deny.png') no-repeat left center;
+}
+
+span.favoriteadded {
+	background:url('img/accept.png') no-repeat left center;
+}
+
+span.wpcoloading, .favoritesuccess, .wpcoadded {
+    background: #fdfdfd;
+    padding: 5px 10px;
+    border: 1px #CCCCCC solid;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    position: absolute;
+	min-width: 120px;
+	text-align: center !important;
+	white-space: nowrap;
+	font-size: 11px;
+	line-height: 26px;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+
+span.wpcoloading img, .favoritesuccess img, .wpcoadded img {
+	border: none !important;
+}
+
+.productinfoholder .favoritesubmit {
+	float:left;
+	width:auto;
+	margin-left:10px;
+}
+
+.productinfoholder .productsubmit input {
+	/*float:left;*/
+}
+
+/* #7 - End of Favorites */
+
+/* #8 - Categories */
+
+div.wpcocategory {
+
+}
+
+div.wpcocategory .wpcocatimg {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+div.wpcocategoriesgrid {
+
+}
+
+div.wpcocategoriesgrid ul {
+    list-style: none;
+    margin: 10px 0 15px 0;
+    padding: 0 0 0 0;
+}
+
+div.wpcocategoriesgrid ul li {
+    margin: 0 10px 15px 0;
+    list-style: none;
+    list-style-type: none !important;
+    display: -moz-inline-box; /* mozilla only */
+    display: inline-block;
+    border-bottom: none;
+    text-align: center;
+	vertical-align: bottom;
+}
+
+div.wpcocategoriesgrid ul li:before {
+    content: "" !important;
+}
+
+div.wpcocategoriesgrid a {
+    text-decoration: none;
+}
+
+div.wpcocategoriesgrid a img {
+    border: none;
+}
+
+div.wpcocategoryimg {
+    border-bottom: 1px #999999 solid;
+    margin: 0 0 10px 0;
+    display: block;
+}
+
+div.wpcocategoriesgrid h4 {
+    font-size: 15px;
+    font-weight: bold;display: block;
+	width: 100%;
+	margin: 0 0 15px 0;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.wpcocategoriesgrid h4 a {
+	display: block;
+}
+
+/* #8 - End of Categories */
+
+/* #9 - General Style */
+
+.wpcohelp a {
+	width: 16px;
+	height: 16px;
+	background-image: url('img/question.png');
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-indent: -9000px;
+	text-decoration: none;
+	line-height: 16px;
+	margin: 0 6px 0 0;
+}
+
+#colorbox img {
+max-width:none !important;
+}
+
+#wpcosearchterm {
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #d3d3d3;
+}
+
+input.ui-button, a.ui-button {
+	background:url('img/bg-buttons.png');
+	border:1px solid #d3d3d3;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	color:#555;
+}
+
+input.ui-button:hover, a.ui-button:hover {
+	background:url('img/bg-buttonshover.png') center center repeat-x;
+	border:1px solid #c6c6c6;	
+}
+
+.globaloptions {
+    margin: 15px 0 15px 0 !important;
+	padding:0;
+}
+
+p.wpcosubmit {
+	margin: 10px 0;
+	padding: 0 0 0 0;	
+}
+
+fieldset.wpco {
+	float:left;
+	width:100%;
+    display: block;
+	border: none;
+    /* border-bottom: 2px #efefef solid; */
+	margin: 0 0 10px 0;
+	text-align: left;
+	padding: 0 0 0 0;
+}
+
+fieldset.wpco legend {
+	text-align: left;
+	font-weight: bold;
+	padding: 0 0 0 0;
+    color: #333333;
+    font-size: auto;
+    font-style: normal;
+}
+
+fieldset.wpco legend sup.wpcorequired {
+	color: #ff0000 !important;
+}
+
+fieldset.wpco select,
+.wpco select,
+select.wpco {
+	width: auto;
+	margin: 0 0 0 0 !important;
+	height: 30px;
+}
+
+fieldset.wpco input[type=text],
+.wpco input[type=text],
+select,
+input[type="text"], 
+input[type="password"] {
+	width: auto;
+	margin: 0 0 0 0;
+}
+
+fieldset.steps {
+	/*border: 1px #CCCCCC solid;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	*/
+	margin: 0 0 10px 0;
+	padding: 0 0 0 0;
+	width:100%;
+}
+
+fieldset.steps legend {
+	padding: 15px 0 10px 0;	
+	font-size: 120%;
+}
+
+label {
+	cursor: pointer;
+}
+
+input.wpco, fieldset.wpco label input {
+	font-size: 12px;
+	margin: 0 0 0 0;
+}
+
+table td input, table td select, table td textarea {
+	margin: 0 !important;
+}
+
+.wpco ul {
+	list-style: none;
+	margin: 0 0 15px 0;
+	padding: 0 0 0 0;
+}
+
+.wpco ul li {
+	list-style: none;
+}
+
+.wpco .notation {
+	font-size: 11px;	
+	display: block;
+	padding: 5px 0;
+}
+
+img.wpco, a.wpco img {
+	border: none;
+	background: none !important;
+}
+
+table.form-table {
+	margin-top: 8px !important;
+}
+
+table.wpco {
+	width: 100%;
+	margin: 15px 0;
+}
+
+table.wpco thead tr, table.wpco tbody tr.total, table.wpco tfoot tr {
+	background: none !important;
+	font-weight: bold;
+}
+
+/*
+table.wpco tr.arow {
+	background: #fafafa;
+}
+
+table.wpco tr.erow {
+	background: #f1f1f1;
+}
+*/
+
+.wpcocleaner, hr.wpco {
+	clear: both !important;
+	height: 1px;
+	visibility: hidden;
+}
+
+.wpcoproduct .wpcobuttonwrap {
+	float: left;
+	width: 100%;
+	margin: 0 0 10px 0;
+}
+
+.wpcoproduct .wpcobuttonwrap, .wpcofavoritewrap {
+	position: relative;
+    float: right;
+}
+
+.wpcoproduct .wpcobuttonwrap .productsubmit {
+	/*float: left;*/
+	margin: 0 10px 0 0;
+	line-height: 45px;
+}
+
+.wpcoproduct .wpcoloadingwrap {
+	line-height: 45px;
+}
+
+span.cart {
+	padding: 0 0 0 20px;
+	background: url('img/cart.png') center left no-repeat;
+}
+
+ul.wpcoerrors {
+	list-style: none;
+}
+
+li.wpcoerror,
+.stepsholder li,
+.wpco li {
+	margin-left: 0 !important;
+}
+
+span.wpcoerror, div.wpcoerror, li.wpcoerror, p.wpcoerror, ul.wpcoerror, ul.wpcoerror li {
+	color: #FF0000 !important;
+}
+
+.wpcooos {
+	color: #ff0000 !important;
+	font-size: 11px !important;
+}
+
+.wpcosuccessmsg {
+	color: green !important;
+}
+
+.wpcohandle {
+	cursor: move;
+	width: 11px;
+	height: 11px;
+	display: block;
+	background: url('../../images/updowndrag.png') no-repeat;
+}
+
+fieldset.wpcooptionslinkfieldset {
+	padding: 0 0 0 0;
+}
+
+div.wpcosort p {
+    font-size: 12px !important;
+    line-height: 14px !important;
+}
+
+.wpcoinhonorof {
+	margin: 15px 0;	
+	font-size:85%;
+}
+
+.wpcoinhonorof table {
+	float:left;
+	width:100%;
+}
+
+.wpcoinhonorof legend {
+	display:block;
+	padding-bottom:10px;
+	font-size:115%;
+	color:#999;
+}
+
+.wpcoinhonorof table input.widefat {
+	width:90%;
+}
+
+.wpcoinhonorf table td .widefat {
+	margin-left:10px;
+}
+
+div.widget-cart {
+	
+}
+
+div.widget-cart ul {
+	list-style: none;
+}
+
+div.widget-cart ul li {
+	list-style: none;
+}
+
+ul.wpcowidgetproducts {
+    list-style: none;
+    list-style-type: none;
+    padding: 0 !important;
+    margin: 5px 0 !important;
+    border: none;	
+}
+
+ul.wpcowidgetproducts li {
+    list-style: none;
+    list-style-type: none;
+    display: block;
+    border: none;
+    height: 65px;
+    line-height: 55px;
+    overflow: hidden;
+}
+
+ul.wpcowidgetproducts li:before {
+	content: "" !important;
+}
+
+ul.wpcowidgetproducts li span.wpcowidgetthumb {
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	margin: 0 10px 0 0;
+}
+
+.wpcowidgetthumb {
+	border: none;
+}
+
+.wpcowidgetitem {
+    
+}
+
+.wpcowidgetitem a {
+    
+}
+
+ul.wpcochecklist {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	list-style: none;
+}
+
+ul.wpcochecklist li ul {
+	list-style: none;
+	margin: 5px 0 0 0;
+	padding: 0 0 0 20px;
+}
+
+div.wpcosupplierimg {
+
+}
+
+a.wpcobuylink {
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #515151;
+}
+
+div.wpcoimglist {
+	margin: 10px 10px 10px 0;
+	width: 100%;
+}
+
+div.wpcoimglist .viewallextraimageslink {
+	margin: 0 0 10px 0;	
+}
+
+div.wpcoimglistfull {
+	width: auto !important;	
+}
+
+.wpcocouponcodeinput {
+	width: 100px !important;	
+}
+
+div.wpcoimglist ul {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0 !important;
+	text-indent: 0px !important;
+	list-style: none;
+}
+
+div.wpcoimglist ul li {
+	float: left;
+	margin: 0 10px 3px 0;
+	padding: 0 0 0 0;
+	text-indent: 0px;
+	list-style: none;
+}
+
+div.wpcoimglist ul li:before {
+	content: "";
+}
+
+div.wpcoimglist ul li a img {
+	border: 1px #d3d3d3 solid;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	padding: 3px;
+	background: white;
+}
+
+div.wpcoimglist ul li a:hover img {
+	border: 1px #b8b8b8 solid;
+}
+
+div.wpcoimglist ul li a.zoomThumbActive img,
+div.wpcoimglist ul li a.zoomThumbActive:hover img {
+	border: 1px #cc0000 solid;	
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+.productinfoholder {
+	float:left;
+	padding-bottom:20px;
+}
+
+.pricewrap .producttax, .taxwrap {
+	font-size: 11px;
+	font-weight: normal;
+	font-style: normal;
+	margin: 0 0 0 5px;	
+}
+
+.pricewrap .measurementprice {
+	font-size: 90%;
+	font-weight: bold;
+}
+
+div.pricetype_square_input,
+div.pricetype_measurement_input {
+	margin: 10px 0 15px 0;
+}
+
+.productinfoholder .productdescriptionview, .productinfoholder .wpcovariation, .pricewrap, .wpco_productspecs, .productsection {
+	float:left;
+	width:100%;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	border-bottom:1px solid #d3d3d3;
+}
+
+.wpco_productspecs, .productsection {
+	line-height:200%;
+	font-size:85%;
+}
+
+.wpco_productspec {
+	float:left;
+	width:100%;
+}
+
+.wpco_productspecname {
+	font-weight:bold;
+}
+
+.wpco_productspecs div, .wpco_productspecs span {
+	margin:0;
+	padding:0;
+}
+
+.productinfoholder p.squareprice {
+	margin-bottom:0;
+}
+
+.productinfoholder .wpcofield {
+	float:left;
+	width:100%;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	border-bottom:1px solid #d3d3d3;
+}
+
+.productinfoholder p {
+	margin-bottom:0;
+}
+
+fieldset.wpcovariation input,
+fieldset.wpcovariation select,
+fieldset.wpcovariation textarea,
+fieldset.steps input,
+fieldset.steps select,
+fieldset.steps textarea,
+fieldset.wpcofield input,
+fieldset.wpcofield select,
+fieldset.wpcofield textarea {
+	border:1px solid #d3d3d3;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	padding:5px;
+}
+
+fieldset.wpcovariation .wpcostyle_radio input, .check-column input {
+	border:0;
+	margin: 2px 8px 2px 0;
+}
+
+label.wpcostyle_radio, label.wpcostyle_checkbox {
+	display: block;
+}
+
+label.wpcostyle_withimage a {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+label.wpcostyle_withimage .jqzoom {
+	float:left;
+	width:auto;
+	padding-left:8px;
+}
+
+label.wpcostyle_withimage .jqzoom img {
+	padding-bottom:0;
+	margin:0;
+	display:inline-block;
+}
+
+label.wpcostyle_withimage .zoomPreload {
+	display:none;
+}
+
+span.wpcostyle_optionlabel {
+	line-height: 50px;	
+	float: left;
+}
+
+label.wpcostyle_float {
+	float: left !important;	
+	margin: 0 10px 0 0;
+}
+
+input.wpcostyle_radio_inputwithimage, input.wpcostyle_checkbox_inputwithimage {
+	height: 50px;
+	line-height: 50px;
+	display: block;
+}
+
+label.wpcostyle_radio input, label.wpcostyle_checkbox input {
+	float: left;	
+	margin: 2px 8px 2px 0;
+}
+
+fieldset.wpcovariation select, fieldset.wpcofield select {
+	padding:3px;
+}
+
+.shippingbuttons {
+	float:left;
+	width:100%;
+	margin: 0 0 20px 0;
+}
+
+fieldset.steps label {
+	margin-right:5px;
+}
+
+.wpco .small, .checkout_small {
+	font-size: 11px;
+}
+
+div.recaptcha {
+	margin: 10px 0 20px 0;
+	clear: both;
+	position: relative;
+}
+
+div.recaptcha table.recaptchatable {
+	line-height: 0 !important;
+}
+
+/* #9 - End of General Style */
